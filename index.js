@@ -1,31 +1,40 @@
-var kittens = ["Milo", "Otis", "Garfield"]
+var kittens = ["Milo", "Otis", "Garfield"];
 
 function destructivelyAppendKitten(name) {
-  kittens.push(name);
+  return kittens.push(name);
 }
 
 function destructivelyPrependKitten(name) {
- return  kittens.unshift(name);
+  return kittens.unshift(name);
 }
 
 function destructivelyRemoveLastKitten() {
-   return kittens.pop();
+  kittens.pop();
+  
 }
 
 function destructivelyRemoveFirstKitten() {
-  kittens.shift();
+  return kittens.shift();
 }
 
 function appendKitten(name) {
+<<<<<<< HEAD
   var newKittens = kittens.slice(0);
   newKittens.push(name);
   return newKittens;
 }
+=======
+ var newKittens = kittens.slice(0);
+ newKittens.push(name);
+ return newKittens;
+  }
+>>>>>>> 15b876b32ae486ebddb43319a7bce408f2c266db
 
 function prependKitten(name) {
   var newKittens = kittens.slice(0);
   newKittens.unshift(name);
   return newKittens;
+<<<<<<< HEAD
   
 }
 
@@ -36,3 +45,21 @@ function removeLastKitten() {
 function removeFirstKitten() {
   return kittens.slice(1);
 
+=======
+  }
+  
+  function removeLastKitten() {
+    return kittens.slice(0, kittens.length -1);
+  }
+  
+  function removeFirstKitten() {
+    return kittens.slice(1);
+  }
+  
+  
+  
+  
+  
+  
+  
+>>>>>>> 15b876b32ae486ebddb43319a7bce408f2c266db
