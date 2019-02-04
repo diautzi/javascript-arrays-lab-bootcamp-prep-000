@@ -38,17 +38,6 @@ function removeLastKitten() {
 function removeFirstKitten() {
   return kittens.slice(1);
   }
-  
-  function removeLastKitten() {
-    return kittens.slice(0, kittens.length -1);
-  }
-  
+
  
-  
-  
-  
-  
-  
-  
-  
->>>>>>> 15b876b32ae486ebddb43319a7bce408f2c266db
+
